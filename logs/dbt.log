@@ -1099,3 +1099,95 @@ Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
 2020-09-27 14:52:19.491066 (Thread-81): handling status request
 2020-09-27 14:52:19.492791 (Thread-81): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4984051470>]}
 2020-09-27 14:52:19.494238 (Thread-81): sending response (<Response 874 bytes [200 OK]>) to 10.0.36.169
+2020-09-27 14:52:24.749633 (MainThread): writing 1 spans (enabled:True)
+2020-09-27 14:52:24.751325 (MainThread): 
+      name jinja2.compile
+        id 13483915114362637385
+  trace_id 14926073886415515796
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1601218344.748405
+       end 1601218344.749413
+  duration 0.001008s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:5451ac43f10f44ba97a1e3ddf7808fcf
+2020-09-27 14:52:24.850980 (Thread-82): Acquiring new bigquery connection "model.hubspot.all_meeting_information".
+2020-09-27 14:52:24.851152 (Thread-82): Opening a new connection, currently in state init
+2020-09-27 14:52:24.870061 (Thread-82): Acquiring new bigquery connection "model.hubspot.latest_meeting_information".
+2020-09-27 14:52:24.870263 (Thread-82): Opening a new connection, currently in state closed
+2020-09-27 14:52:24.888236 (Thread-82): Acquiring new bigquery connection "model.hubspot.latest_owner_information".
+2020-09-27 14:52:24.888388 (Thread-82): Opening a new connection, currently in state closed
+2020-09-27 14:52:24.903625 (Thread-82): Acquiring new bigquery connection "model.hubspot.latest_contact_information".
+2020-09-27 14:52:24.903770 (Thread-82): Opening a new connection, currently in state closed
+2020-09-27 14:52:25.071389 (Thread-82): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 14:52:25.246808 (Thread-83): handling status request
+2020-09-27 14:52:25.247565 (Thread-83): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497f61ee48>]}
+2020-09-27 14:52:25.250589 (Thread-83): sending response (<Response 2967 bytes [200 OK]>) to 10.0.27.68
+2020-09-27 14:52:25.754028 (AgentWriter): reported 43 traces in 0.00395s
+2020-09-27 14:52:25.754263 (AgentWriter): initialized RateSampler, sample 100% of traces, 31 additional messages skipped
+2020-09-27 15:24:56.114532 (MainThread): Running with dbt=0.17.2
+2020-09-27 15:24:56.380148 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.rpc.server.RPCServerTask'>, debug=False, exclude=None, host='0.0.0.0', log_cache_events=False, log_format='default', models=None, partial_parse=True, port=8580, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='rpc', write_json=True)
+2020-09-27 15:24:56.395671 (MainThread): Tracking: tracking
+2020-09-27 15:24:56.406152 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68837cb470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6888037b70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6888037b38>]}
+2020-09-27 15:24:56.406550 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=13
+2020-09-27 15:24:56.407030 (MainThread): Supported methods: ['cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'status', 'test']
+2020-09-27 15:24:56.407364 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2020-09-27 15:24:56.411329 (Thread-1): Parsing macros/core.sql
+2020-09-27 15:24:56.416573 (Thread-1): Parsing macros/materializations/helpers.sql
+2020-09-27 15:24:56.428485 (Thread-1): Parsing macros/materializations/common/merge.sql
+2020-09-27 15:24:56.446126 (Thread-1): Parsing macros/materializations/table/table.sql
+2020-09-27 15:24:56.453481 (Thread-1): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-09-27 15:24:56.458927 (Thread-1): Parsing macros/materializations/view/view.sql
+2020-09-27 15:24:56.470646 (Thread-1): Parsing macros/materializations/snapshot/snapshot.sql
+2020-09-27 15:24:56.503868 (Thread-1): Parsing macros/materializations/snapshot/strategies.sql
+2020-09-27 15:24:56.530531 (Thread-1): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-09-27 15:24:56.533696 (Thread-1): Parsing macros/materializations/seed/seed.sql
+2020-09-27 15:24:56.566413 (Thread-1): Parsing macros/materializations/incremental/incremental.sql
+2020-09-27 15:24:56.573157 (Thread-1): Parsing macros/materializations/incremental/helpers.sql
+2020-09-27 15:24:56.575222 (Thread-1): Parsing macros/etc/query.sql
+2020-09-27 15:24:56.576466 (Thread-1): Parsing macros/etc/get_custom_schema.sql
+2020-09-27 15:24:56.578709 (Thread-1): Parsing macros/etc/get_custom_alias.sql
+2020-09-27 15:24:56.579828 (Thread-1): Parsing macros/etc/datetime.sql
+2020-09-27 15:24:56.592546 (Thread-1): Parsing macros/etc/get_custom_database.sql
+2020-09-27 15:24:56.594712 (Thread-1): Parsing macros/etc/is_incremental.sql
+2020-09-27 15:24:56.596574 (Thread-1): Parsing macros/adapters/common.sql
+2020-09-27 15:24:56.649208 (Thread-1): Parsing macros/schema_tests/relationships.sql
+2020-09-27 15:24:56.650699 (Thread-1): Parsing macros/schema_tests/unique.sql
+2020-09-27 15:24:56.652053 (Thread-1): Parsing macros/schema_tests/accepted_values.sql
+2020-09-27 15:24:56.654211 (Thread-1): Parsing macros/schema_tests/not_null.sql
+2020-09-27 15:24:56.655721 (Thread-1): Parsing macros/adapters.sql
+2020-09-27 15:24:56.673864 (Thread-1): Parsing macros/catalog.sql
+2020-09-27 15:24:56.680176 (Thread-1): Parsing macros/etc.sql
+2020-09-27 15:24:56.681001 (Thread-1): Parsing macros/materializations/incremental.sql
+2020-09-27 15:24:56.706665 (Thread-1): Parsing macros/materializations/snapshot.sql
+2020-09-27 15:24:56.716797 (Thread-1): Parsing macros/materializations/seed.sql
+2020-09-27 15:24:56.721422 (Thread-1): Parsing macros/materializations/table.sql
+2020-09-27 15:24:56.737785 (Thread-1): Parsing macros/materializations/view.sql
+2020-09-27 15:24:56.819548 (Thread-1): Acquiring new bigquery connection "model.hubspot.all_meeting_information".
+2020-09-27 15:24:56.819727 (Thread-1): Opening a new connection, currently in state init
+2020-09-27 15:24:56.860070 (Thread-1): Acquiring new bigquery connection "model.hubspot.latest_meeting_information".
+2020-09-27 15:24:56.860231 (Thread-1): Opening a new connection, currently in state closed
+2020-09-27 15:24:56.875902 (Thread-1): Acquiring new bigquery connection "model.hubspot.latest_owner_information".
+2020-09-27 15:24:56.876059 (Thread-1): Opening a new connection, currently in state closed
+2020-09-27 15:24:56.897556 (Thread-1): Acquiring new bigquery connection "model.hubspot.latest_contact_information".
+2020-09-27 15:24:56.897728 (Thread-1): Opening a new connection, currently in state closed
+2020-09-27 15:24:56.951903 (Thread-2): handling status request
+2020-09-27 15:24:56.952526 (Thread-2): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f27c1392-49ef-4e22-9138-64d45bf13d04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68835a13c8>]}
+2020-09-27 15:24:56.954611 (Thread-2): sending response (<Response 184 bytes [200 OK]>) to 10.0.38.51
+2020-09-27 15:24:57.073177 (Thread-1): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 15:24:58.385309 (Thread-3): handling status request
+2020-09-27 15:24:58.385828 (Thread-3): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f27c1392-49ef-4e22-9138-64d45bf13d04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6882d70c50>]}
+2020-09-27 15:24:58.390795 (Thread-3): sending response (<Response 11391 bytes [200 OK]>) to 10.0.17.64
+2020-09-27 15:25:14.910049 (Thread-4): handling status request
+2020-09-27 15:25:14.912101 (Thread-4): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f27c1392-49ef-4e22-9138-64d45bf13d04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6882d68898>]}
+2020-09-27 15:25:14.916891 (Thread-4): sending response (<Response 11391 bytes [200 OK]>) to 10.0.12.102
