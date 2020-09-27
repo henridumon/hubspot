@@ -445,3 +445,31 @@ There are 1 unused configuration paths:
 2020-09-27 14:04:17.726166 (Thread-33): handling status request
 2020-09-27 14:04:17.728078 (Thread-33): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497ed85320>]}
 2020-09-27 14:04:17.729225 (Thread-33): sending response (<Response 874 bytes [200 OK]>) to 10.0.34.126
+2020-09-27 14:04:22.843815 (MainThread): writing 1 spans (enabled:True), 174 additional messages skipped
+2020-09-27 14:04:22.845372 (MainThread): 
+      name jinja2.compile
+        id 9777592670028558912
+  trace_id 16798318267600224031
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1601215462.84288
+       end 1601215462.843601
+  duration 0.000721s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:5451ac43f10f44ba97a1e3ddf7808fcf, 174 additional messages skipped
+2020-09-27 14:04:23.196986 (Thread-34): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 14:04:23.314539 (AgentWriter): reported 35 traces in 0.00815s, 6 additional messages skipped
+2020-09-27 14:04:23.314886 (AgentWriter): initialized RateSampler, sample 100% of traces, 223 additional messages skipped
+2020-09-27 14:04:23.666418 (Thread-35): handling status request
+2020-09-27 14:04:23.667114 (Thread-35): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f498416d240>]}
+2020-09-27 14:04:23.668482 (Thread-35): sending response (<Response 606 bytes [200 OK]>) to 10.0.44.9
+2020-09-27 14:04:52.976419 (Thread-36): handling status request
+2020-09-27 14:04:52.978756 (Thread-36): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f498416d6a0>]}
+2020-09-27 14:04:52.979744 (Thread-36): sending response (<Response 606 bytes [200 OK]>) to 10.0.3.121
