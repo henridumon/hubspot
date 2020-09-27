@@ -301,3 +301,147 @@ There are 1 unused configuration paths:
 2020-09-27 13:44:06.055849 (Thread-14): handling status request
 2020-09-27 13:44:06.057892 (Thread-14): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49843e6e48>]}
 2020-09-27 13:44:06.058853 (Thread-14): sending response (<Response 606 bytes [200 OK]>) to 10.0.12.102
+2020-09-27 13:44:11.834220 (MainThread): writing 1 spans (enabled:True), 34 additional messages skipped
+2020-09-27 13:44:11.835581 (MainThread): 
+      name jinja2.compile
+        id 14635876907900221580
+  trace_id 6009154481513497842
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1601214251.833517
+       end 1601214251.834059
+  duration 0.000542s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:5451ac43f10f44ba97a1e3ddf7808fcf, 34 additional messages skipped
+2020-09-27 13:44:12.167047 (Thread-15): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 13:44:12.443813 (Thread-16): handling status request
+2020-09-27 13:44:12.444305 (Thread-16): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49842b1a90>]}
+2020-09-27 13:44:12.445291 (Thread-16): sending response (<Response 606 bytes [200 OK]>) to 10.0.44.9
+2020-09-27 13:44:12.688923 (AgentWriter): reported 35 traces in 0.00398s
+2020-09-27 13:44:12.689179 (AgentWriter): initialized RateSampler, sample 100% of traces, 31 additional messages skipped
+2020-09-27 13:59:42.042588 (MainThread): writing 1 spans (enabled:True), 34 additional messages skipped
+2020-09-27 13:59:42.044220 (MainThread): 
+      name jinja2.compile
+        id 7825644025239102162
+  trace_id 4314583025820381035
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1601215182.041936
+       end 1601215182.042435
+  duration 0.000499s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:5451ac43f10f44ba97a1e3ddf7808fcf, 34 additional messages skipped
+2020-09-27 13:59:42.107620 (Thread-17): Got an acceptable cached parse result
+2020-09-27 13:59:42.299895 (Thread-17): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 13:59:42.749513 (Thread-18): handling status request
+2020-09-27 13:59:42.750012 (Thread-18): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497f7e9be0>]}
+2020-09-27 13:59:42.751039 (Thread-18): sending response (<Response 874 bytes [200 OK]>) to 10.0.12.156
+2020-09-27 13:59:42.801261 (AgentWriter): reported 35 traces in 0.00436s
+2020-09-27 13:59:42.801471 (AgentWriter): initialized RateSampler, sample 100% of traces, 31 additional messages skipped
+2020-09-27 14:00:26.138968 (MainThread): writing 1 spans (enabled:True), 34 additional messages skipped
+2020-09-27 14:00:26.140545 (MainThread): 
+      name jinja2.compile
+        id 1175000534235291428
+  trace_id 8206304264060113490
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1601215226.1382651
+       end 1601215226.1388102
+  duration 0.000545s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:5451ac43f10f44ba97a1e3ddf7808fcf, 34 additional messages skipped
+2020-09-27 14:00:26.210482 (Thread-19): Got an acceptable cached parse result
+2020-09-27 14:00:26.405641 (Thread-19): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 14:00:26.590739 (Thread-20): handling status request
+2020-09-27 14:00:26.591245 (Thread-20): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4984140c18>]}
+2020-09-27 14:00:26.592611 (Thread-20): sending response (<Response 874 bytes [200 OK]>) to 10.0.3.121
+2020-09-27 14:00:26.863552 (AgentWriter): reported 35 traces in 0.04968s
+2020-09-27 14:00:26.863797 (AgentWriter): initialized RateSampler, sample 100% of traces, 31 additional messages skipped
+2020-09-27 14:03:10.476524 (MainThread): writing 1 spans (enabled:True), 34 additional messages skipped
+2020-09-27 14:03:10.478206 (MainThread): 
+      name jinja2.compile
+        id 9280832116940309325
+  trace_id 3784368580850521707
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1601215390.4755251
+       end 1601215390.4763122
+  duration 0.000787s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:5451ac43f10f44ba97a1e3ddf7808fcf, 34 additional messages skipped
+2020-09-27 14:03:10.597079 (Thread-21): Got an acceptable cached parse result
+2020-09-27 14:03:11.015083 (Thread-21): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 14:03:11.017714 (AgentWriter): reported 35 traces in 0.01773s
+2020-09-27 14:03:11.018024 (AgentWriter): initialized RateSampler, sample 100% of traces, 31 additional messages skipped
+2020-09-27 14:03:11.197958 (Thread-22): handling status request
+2020-09-27 14:03:11.198627 (Thread-22): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497f6db710>]}
+2020-09-27 14:03:11.200129 (Thread-22): sending response (<Response 874 bytes [200 OK]>) to 10.0.27.68
+2020-09-27 14:03:22.932016 (Thread-23): Got an acceptable cached parse result
+2020-09-27 14:03:23.219863 (Thread-23): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 14:03:23.561703 (Thread-24): handling status request
+2020-09-27 14:03:23.562346 (Thread-24): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4984262da0>]}
+2020-09-27 14:03:23.563854 (Thread-24): sending response (<Response 874 bytes [200 OK]>) to 10.0.17.64
+2020-09-27 14:03:33.291312 (Thread-25): Got an acceptable cached parse result
+2020-09-27 14:03:33.405966 (Thread-26): handling status request
+2020-09-27 14:03:33.406697 (Thread-26): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49844a7eb8>]}
+2020-09-27 14:03:33.407812 (Thread-26): sending response (<Response 184 bytes [200 OK]>) to 10.0.24.187
+2020-09-27 14:03:33.711072 (Thread-25): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 14:03:34.754205 (Thread-27): handling status request
+2020-09-27 14:03:34.754949 (Thread-27): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49842e8f60>]}
+2020-09-27 14:03:34.756405 (Thread-27): sending response (<Response 874 bytes [200 OK]>) to 10.0.5.150
+2020-09-27 14:03:47.263981 (Thread-28): Got an acceptable cached parse result
+2020-09-27 14:03:47.586065 (Thread-28): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 14:03:47.601496 (Thread-29): handling status request
+2020-09-27 14:03:47.608816 (Thread-29): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49843440f0>]}
+2020-09-27 14:03:47.610419 (Thread-29): sending response (<Response 874 bytes [200 OK]>) to 10.0.18.102
+2020-09-27 14:03:55.759232 (Thread-30): Got an acceptable cached parse result
+2020-09-27 14:03:56.074037 (Thread-31): handling status request
+2020-09-27 14:03:56.093242 (Thread-31): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497ed93ac8>]}
+2020-09-27 14:03:56.094425 (Thread-31): sending response (<Response 184 bytes [200 OK]>) to 10.0.36.169
+2020-09-27 14:03:56.227704 (Thread-30): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 14:03:57.512775 (Thread-32): handling status request
+2020-09-27 14:03:57.513441 (Thread-32): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497ed85320>]}
+2020-09-27 14:03:57.514876 (Thread-32): sending response (<Response 874 bytes [200 OK]>) to 10.0.24.187
+2020-09-27 14:04:17.726166 (Thread-33): handling status request
+2020-09-27 14:04:17.728078 (Thread-33): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497ed85320>]}
+2020-09-27 14:04:17.729225 (Thread-33): sending response (<Response 874 bytes [200 OK]>) to 10.0.34.126
