@@ -1,2 +1,3 @@
-# personal-dbt
-Personal DBT projects
+# Hubspot
+
+BigQuery analyses on hubspot CRM data 
