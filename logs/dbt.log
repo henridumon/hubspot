@@ -540,3 +540,562 @@ There are 1 unused configuration paths:
 2020-09-27 14:12:22.732326 (Thread-45): handling status request
 2020-09-27 14:12:22.734514 (Thread-45): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49842b3160>]}
 2020-09-27 14:12:22.735531 (Thread-45): sending response (<Response 874 bytes [200 OK]>) to 10.0.18.102
+2020-09-27 14:12:28.505830 (MainThread): writing 1 spans (enabled:True), 34 additional messages skipped
+2020-09-27 14:12:28.507541 (MainThread): 
+      name jinja2.compile
+        id 4239031511321653093
+  trace_id 12432291369394505934
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1601215948.505088
+       end 1601215948.505664
+  duration 0.000576s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:5451ac43f10f44ba97a1e3ddf7808fcf, 34 additional messages skipped
+2020-09-27 14:12:28.746043 (Thread-46): Acquiring new bigquery connection "model.hubspot.all_meeting_information".
+2020-09-27 14:12:28.746257 (Thread-46): Opening a new connection, currently in state init
+2020-09-27 14:12:28.798796 (Thread-46): Acquiring new bigquery connection "model.hubspot.latest_meeting_information".
+2020-09-27 14:12:28.798972 (Thread-46): Opening a new connection, currently in state closed
+2020-09-27 14:12:28.813084 (Thread-46): Acquiring new bigquery connection "model.hubspot.latest_owner_information".
+2020-09-27 14:12:28.815964 (Thread-46): Opening a new connection, currently in state closed
+2020-09-27 14:12:28.829719 (Thread-46): Acquiring new bigquery connection "model.hubspot.latest_contact_information".
+2020-09-27 14:12:28.829858 (Thread-46): Opening a new connection, currently in state closed
+2020-09-27 14:12:28.898828 (Thread-47): handling status request
+2020-09-27 14:12:28.903378 (Thread-47): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f498439ee48>]}
+2020-09-27 14:12:28.906112 (Thread-47): Checking header 'user-agent' tracing in whitelist set(), 44 additional messages skipped
+2020-09-27 14:12:28.927923 (Thread-47): sending response (<Response 184 bytes [200 OK]>) to 10.0.12.156
+2020-09-27 14:12:28.988255 (Thread-46): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 14:12:29.442856 (AgentWriter): reported 49 traces in 0.00509s
+2020-09-27 14:12:29.443091 (AgentWriter): initialized RateSampler, sample 100% of traces, 31 additional messages skipped
+2020-09-27 14:12:30.252361 (Thread-48): handling status request
+2020-09-27 14:12:30.253055 (Thread-48): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49843b52b0>]}
+2020-09-27 14:12:30.255829 (Thread-48): sending response (<Response 2967 bytes [200 OK]>) to 10.0.36.169
+2020-09-27 14:40:03.316802 (Thread-49): handling status request
+2020-09-27 14:40:03.318499 (Thread-49): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f498429b940>]}
+2020-09-27 14:40:03.320158 (Thread-49): sending response (<Response 2967 bytes [200 OK]>) to 10.0.27.68
+2020-09-27 14:40:03.365578 (Thread-50): handling status request
+2020-09-27 14:40:03.366045 (Thread-50): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f498429b8d0>]}
+2020-09-27 14:40:03.367668 (Thread-50): sending response (<Response 2967 bytes [200 OK]>) to 10.0.47.163
+2020-09-27 14:40:03.768237 (Thread-51): handling cli_args request
+2020-09-27 14:40:03.768738 (Thread-51): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f498406ed30>]}
+2020-09-27 14:40:03.779316 (Thread-51): Connection 'model.hubspot.latest_contact_information' was properly closed.
+2020-09-27 14:40:04.706108 (Thread-51): sending response (<Response 137 bytes [200 OK]>) to 10.0.34.126
+2020-09-27 14:40:04.766173 (MainThread): Partial parsing not enabled
+2020-09-27 14:40:04.768135 (MainThread): Parsing macros/core.sql
+2020-09-27 14:40:04.772903 (MainThread): Parsing macros/materializations/helpers.sql
+2020-09-27 14:40:04.781015 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-09-27 14:40:04.795584 (MainThread): Parsing macros/materializations/table/table.sql
+2020-09-27 14:40:04.802491 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-09-27 14:40:04.807493 (MainThread): Parsing macros/materializations/view/view.sql
+2020-09-27 14:40:04.813960 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-09-27 14:40:04.842702 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-09-27 14:40:04.860560 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-09-27 14:40:04.862540 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-09-27 14:40:04.885201 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-09-27 14:40:04.891613 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-09-27 14:40:04.893636 (MainThread): Parsing macros/etc/query.sql
+2020-09-27 14:40:04.894807 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-09-27 14:40:04.896980 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-09-27 14:40:04.898063 (MainThread): Parsing macros/etc/datetime.sql
+2020-09-27 14:40:04.907416 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-09-27 14:40:04.909232 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-09-27 14:40:04.911003 (MainThread): Parsing macros/adapters/common.sql
+2020-09-27 14:40:04.975995 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-09-27 14:40:04.977487 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-09-27 14:40:04.978733 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-09-27 14:40:04.980850 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-09-27 14:40:04.982212 (MainThread): Parsing macros/adapters.sql
+2020-09-27 14:40:04.999247 (MainThread): Parsing macros/catalog.sql
+2020-09-27 14:40:05.006033 (MainThread): Parsing macros/etc.sql
+2020-09-27 14:40:05.006810 (MainThread): Parsing macros/materializations/incremental.sql
+2020-09-27 14:40:05.020036 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-09-27 14:40:05.022022 (MainThread): Parsing macros/materializations/seed.sql
+2020-09-27 14:40:05.024839 (MainThread): Parsing macros/materializations/table.sql
+2020-09-27 14:40:05.034901 (MainThread): Parsing macros/materializations/view.sql
+2020-09-27 14:40:05.040164 (MainThread): Partial parsing not enabled
+2020-09-27 14:40:05.093292 (MainThread): Acquiring new bigquery connection "model.hubspot.all_meeting_information".
+2020-09-27 14:40:05.093406 (MainThread): Opening a new connection, currently in state init
+2020-09-27 14:40:05.128497 (MainThread): Acquiring new bigquery connection "model.hubspot.latest_meeting_information".
+2020-09-27 14:40:05.128606 (MainThread): Opening a new connection, currently in state closed
+2020-09-27 14:40:05.140681 (Thread-52): handling poll request
+2020-09-27 14:40:05.141227 (Thread-52): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4984052208>]}
+2020-09-27 14:40:05.148156 (Thread-52): sending response (<Response 10554 bytes [200 OK]>) to 10.0.36.169
+2020-09-27 14:40:05.143128 (MainThread): Acquiring new bigquery connection "model.hubspot.latest_owner_information".
+2020-09-27 14:40:05.143234 (MainThread): Opening a new connection, currently in state closed
+2020-09-27 14:40:05.157496 (MainThread): Acquiring new bigquery connection "model.hubspot.latest_contact_information".
+2020-09-27 14:40:05.157599 (MainThread): Opening a new connection, currently in state closed
+2020-09-27 14:40:05.333278 (MainThread): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 14:40:05.369826 (MainThread): Found 4 models, 0 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources
+2020-09-27 14:40:05.370528 (MainThread): 
+2020-09-27 14:40:05.370857 (MainThread): Acquiring new bigquery connection "master".
+2020-09-27 14:40:05.370939 (MainThread): Opening a new connection, currently in state closed
+2020-09-27 14:40:05.372895 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_freelance-290006".
+2020-09-27 14:40:05.373000 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-09-27 14:40:05.605390 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_freelance-290006_dbt_hdumon".
+2020-09-27 14:40:05.605524 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2020-09-27 14:40:05.606120 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-09-27 14:40:05.833766 (MainThread): 14:40:05 | Concurrency: 1 threads (target='default')
+2020-09-27 14:40:05.833903 (MainThread): 14:40:05 | 
+2020-09-27 14:40:05.835637 (Thread-1): Began running node model.hubspot.latest_contact_information
+2020-09-27 14:40:05.836974 (Thread-1): 14:40:05 | 1 of 1 START table model dbt_hdumon.latest_contact_information....... [RUN]
+2020-09-27 14:40:05.837304 (Thread-1): Acquiring new bigquery connection "model.hubspot.latest_contact_information".
+2020-09-27 14:40:05.837385 (Thread-1): Opening a new connection, currently in state closed
+2020-09-27 14:40:05.837469 (Thread-1): Compiling model.hubspot.latest_contact_information
+2020-09-27 14:40:05.851677 (Thread-1): Writing injected SQL for node "model.hubspot.latest_contact_information"
+2020-09-27 14:40:05.888415 (Thread-1): finished collecting timing info
+2020-09-27 14:40:05.910318 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-09-27 14:40:06.143867 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-09-27 14:40:06.299688 (Thread-1): Writing runtime SQL for node "model.hubspot.latest_contact_information"
+2020-09-27 14:40:06.335977 (Thread-1): On model.hubspot.latest_contact_information: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "user", "target_name": "default", "node_id": "model.hubspot.latest_contact_information"} */
+
+
+  create or replace table `freelance-290006`.`dbt_hdumon`.`latest_contact_information`
+  
+  
+  OPTIONS()
+  as (
+    
+
+select all_contact_data.vid contact_id
+      ,ARRAY_AGG(properties.company.value ORDER BY _sdc_extracted_at DESC)[OFFSET(0)] AS contact_company
+      ,ARRAY_AGG(concat(properties.firstname.value, " ",properties.lastname.value) ORDER BY _sdc_extracted_at DESC)[OFFSET(0)] AS contact_full_name
+      ,ARRAY_AGG(properties.country.value ORDER BY _sdc_extracted_at DESC)[OFFSET(0)] AS contact_country
+      ,ARRAY_AGG(properties.state.value ORDER BY _sdc_extracted_at DESC)[OFFSET(0)] AS contact_state
+FROM `freelance-290006.hubspot.contacts` all_contact_data
+group by all_contact_data.vid
+  );
+    
+2020-09-27 14:40:06.619914 (Thread-53): handling poll request
+2020-09-27 14:40:06.620401 (Thread-53): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497ed741d0>]}
+2020-09-27 14:40:06.623699 (Thread-53): sending response (<Response 9413 bytes [200 OK]>) to 10.0.18.102
+2020-09-27 14:40:08.032911 (Thread-54): handling poll request
+2020-09-27 14:40:08.034632 (Thread-54): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497ed78518>]}
+2020-09-27 14:40:08.035620 (Thread-54): sending response (<Response 323 bytes [200 OK]>) to 10.0.24.187
+2020-09-27 14:40:08.442724 (Thread-1): finished collecting timing info
+2020-09-27 14:40:08.443496 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '37a11409-3923-4ad9-b7a6-3afdcd5526cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdb2252fcf8>]}
+2020-09-27 14:40:08.444617 (Thread-1): 14:40:08 | 1 of 1 OK created table model dbt_hdumon.latest_contact_information.. [CREATE TABLE (3) in 2.61s]
+2020-09-27 14:40:08.444715 (Thread-1): Finished running node model.hubspot.latest_contact_information
+2020-09-27 14:40:08.445836 (MainThread): Acquiring new bigquery connection "master".
+2020-09-27 14:40:08.445931 (MainThread): Opening a new connection, currently in state closed
+2020-09-27 14:40:08.446158 (MainThread): 14:40:08 | 
+2020-09-27 14:40:08.446230 (MainThread): 14:40:08 | Finished running 1 table model in 3.08s.
+2020-09-27 14:40:08.446290 (MainThread): Connection 'master' was properly closed.
+2020-09-27 14:40:08.446334 (MainThread): Connection 'model.hubspot.latest_contact_information' was properly closed.
+2020-09-27 14:40:08.461042 (MainThread): 
+2020-09-27 14:40:08.461169 (MainThread): Completed successfully
+2020-09-27 14:40:08.461235 (MainThread): 
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2020-09-27 14:40:09.474454 (Thread-55): handling poll request
+2020-09-27 14:40:09.474938 (Thread-55): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497ed78940>]}
+2020-09-27 14:40:09.481366 (Thread-55): sending response (<Response 8474 bytes [200 OK]>) to 10.0.12.102
+2020-09-27 14:40:09.937616 (Thread-56): handling status request
+2020-09-27 14:40:09.938114 (Thread-56): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497ed78828>]}
+2020-09-27 14:40:09.939827 (Thread-56): sending response (<Response 2967 bytes [200 OK]>) to 10.0.47.163
+2020-09-27 14:46:33.871893 (MainThread): writing 1 spans (enabled:True), 48 additional messages skipped
+2020-09-27 14:46:33.873353 (MainThread): 
+      name jinja2.compile
+        id 6678464877523707209
+  trace_id 16831761231620540752
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1601217993.87059
+       end 1601217993.871581
+  duration 0.000991s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:5451ac43f10f44ba97a1e3ddf7808fcf, 48 additional messages skipped
+2020-09-27 14:46:33.948808 (Thread-57): Got an acceptable cached parse result
+2020-09-27 14:46:33.997473 (Thread-57): Acquiring new bigquery connection "model.hubspot.latest_owner_information".
+2020-09-27 14:46:33.997678 (Thread-57): Opening a new connection, currently in state init
+2020-09-27 14:46:34.184216 (Thread-57): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 14:46:34.476118 (Thread-58): handling status request
+2020-09-27 14:46:34.476594 (Thread-58): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4984394a90>]}
+2020-09-27 14:46:34.477880 (Thread-58): sending response (<Response 1462 bytes [200 OK]>) to 10.0.38.51
+2020-09-27 14:46:34.688748 (AgentWriter): reported 37 traces in 0.00523s
+2020-09-27 14:46:34.689002 (AgentWriter): initialized RateSampler, sample 100% of traces, 31 additional messages skipped
+2020-09-27 14:47:09.724047 (Thread-59): handling status request
+2020-09-27 14:47:09.725931 (Thread-59): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49843b5390>]}
+2020-09-27 14:47:09.727132 (Thread-59): sending response (<Response 1462 bytes [200 OK]>) to 10.0.5.150
+2020-09-27 14:47:10.231095 (Thread-60): handling run_sql request
+2020-09-27 14:47:10.231587 (Thread-60): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49840510f0>]}
+2020-09-27 14:47:10.234398 (Thread-60): Connection 'model.hubspot.latest_owner_information' was properly closed.
+2020-09-27 14:47:11.213036 (Thread-60): sending response (<Response 137 bytes [200 OK]>) to 10.0.34.126
+2020-09-27 14:47:11.235396 (MainThread): Acquiring new bigquery connection "rpc.hubspot.request".
+2020-09-27 14:47:11.235855 (MainThread): Opening a new connection, currently in state init
+2020-09-27 14:47:11.268279 (MainThread): Found 4 models, 0 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources
+2020-09-27 14:47:11.269191 (Thread-1): Acquiring new bigquery connection "rpc.hubspot.request".
+2020-09-27 14:47:11.269296 (Thread-1): Opening a new connection, currently in state init
+2020-09-27 14:47:11.269382 (Thread-1): Compiling rpc.hubspot.request
+2020-09-27 14:47:11.283852 (Thread-1): finished collecting timing info
+2020-09-27 14:47:11.284768 (Thread-1): On rpc.hubspot.request: 
+
+with latest_meeting_data as
+(
+select e.engagement_id, max(_sdc_extracted_at) _sdc_extracted_at
+from `freelance-290006.hubspot.engagements` e
+group by e.engagement_id
+)
+
+select e.engagement_id meeting_id
+      ,value contact_id
+      ,DATE(TIMESTAMP_MILLIS(e.metadata.starttime)) meeting_date
+      ,(e.metadata.endtime - e.metadata.starttime)/1000 meeting_duration_minutes
+      ,e.engagement.ownerid owner_id
+FROM `freelance-290006.hubspot.engagements` e, unnest(e.associations.contactids)
+inner join latest_meeting_data 
+on latest_meeting_data.engagement_id = e.engagement_id
+and latest_meeting_data._sdc_extracted_at = e._sdc_extracted_at
+WHERE e.engagement.type = 'MEETING'
+
+limit 100
+2020-09-27 14:47:11.646050 (Thread-61): handling poll request
+2020-09-27 14:47:11.646581 (Thread-61): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497ed6a198>]}
+2020-09-27 14:47:11.648948 (Thread-61): sending response (<Response 3518 bytes [200 OK]>) to 10.0.34.126
+2020-09-27 14:47:13.053772 (Thread-62): handling poll request
+2020-09-27 14:47:13.054248 (Thread-62): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49842a22b0>]}
+2020-09-27 14:47:13.055283 (Thread-62): sending response (<Response 404 bytes [200 OK]>) to 10.0.27.68
+2020-09-27 14:47:13.607145 (Thread-1): finished collecting timing info
+2020-09-27 14:47:14.356389 (Thread-63): handling poll request
+2020-09-27 14:47:14.356886 (Thread-63): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f498406e550>]}
+2020-09-27 14:47:14.362203 (Thread-63): sending response (<Response 6205 bytes [200 OK]>) to 10.0.12.102
+2020-09-27 14:47:19.951460 (MainThread): writing 1 spans (enabled:True), 36 additional messages skipped
+2020-09-27 14:47:19.953173 (MainThread): 
+      name jinja2.compile
+        id 16037506442507096800
+  trace_id 9463639825880811962
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1601218039.950428
+       end 1601218039.951225
+  duration 0.000797s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:5451ac43f10f44ba97a1e3ddf7808fcf, 36 additional messages skipped
+2020-09-27 14:47:20.026354 (Thread-64): Got an acceptable cached parse result
+2020-09-27 14:47:20.067646 (Thread-64): Acquiring new bigquery connection "model.hubspot.latest_meeting_information".
+2020-09-27 14:47:20.067791 (Thread-64): Opening a new connection, currently in state init
+2020-09-27 14:47:20.238350 (Thread-64): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 14:47:20.582683 (Thread-65): handling status request
+2020-09-27 14:47:20.583156 (Thread-65): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49841e2320>]}
+2020-09-27 14:47:20.584353 (Thread-65): sending response (<Response 1464 bytes [200 OK]>) to 10.0.44.9
+2020-09-27 14:47:20.699396 (AgentWriter): reported 37 traces in 0.00444s
+2020-09-27 14:47:20.699644 (AgentWriter): initialized RateSampler, sample 100% of traces, 31 additional messages skipped
+2020-09-27 14:47:23.232099 (Thread-66): Got an acceptable cached parse result
+2020-09-27 14:47:23.478449 (Thread-67): handling status request
+2020-09-27 14:47:23.478882 (Thread-67): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4984103b70>]}
+2020-09-27 14:47:23.479614 (Thread-67): sending response (<Response 184 bytes [200 OK]>) to 10.0.12.156
+2020-09-27 14:47:23.566409 (Thread-66): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 14:47:24.919013 (Thread-68): handling status request
+2020-09-27 14:47:24.919508 (Thread-68): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49843925f8>]}
+2020-09-27 14:47:24.920497 (Thread-68): sending response (<Response 874 bytes [200 OK]>) to 10.0.34.126
+2020-09-27 14:47:47.788792 (Thread-69): handling status request
+2020-09-27 14:47:47.790938 (Thread-69): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497f77bd68>]}
+2020-09-27 14:47:47.791932 (Thread-69): sending response (<Response 874 bytes [200 OK]>) to 10.0.18.102
+2020-09-27 14:47:47.864073 (Thread-70): handling status request
+2020-09-27 14:47:47.864560 (Thread-70): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f498448b0f0>]}
+2020-09-27 14:47:47.865595 (Thread-70): sending response (<Response 874 bytes [200 OK]>) to 10.0.24.187
+2020-09-27 14:47:48.117627 (Thread-71): handling cli_args request
+2020-09-27 14:47:48.118105 (Thread-71): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49843522e8>]}
+2020-09-27 14:47:48.126780 (Thread-71): Connection 'model.hubspot.latest_meeting_information' was properly closed.
+2020-09-27 14:47:49.048887 (Thread-71): sending response (<Response 137 bytes [200 OK]>) to 10.0.38.179
+2020-09-27 14:47:49.108107 (MainThread): Partial parsing not enabled
+2020-09-27 14:47:49.110086 (MainThread): Parsing macros/core.sql
+2020-09-27 14:47:49.114782 (MainThread): Parsing macros/materializations/helpers.sql
+2020-09-27 14:47:49.122975 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-09-27 14:47:49.137454 (MainThread): Parsing macros/materializations/table/table.sql
+2020-09-27 14:47:49.144407 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-09-27 14:47:49.149561 (MainThread): Parsing macros/materializations/view/view.sql
+2020-09-27 14:47:49.156054 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-09-27 14:47:49.184794 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-09-27 14:47:49.201822 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-09-27 14:47:49.203713 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-09-27 14:47:49.225690 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-09-27 14:47:49.232179 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-09-27 14:47:49.234216 (MainThread): Parsing macros/etc/query.sql
+2020-09-27 14:47:49.235369 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-09-27 14:47:49.237590 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-09-27 14:47:49.238629 (MainThread): Parsing macros/etc/datetime.sql
+2020-09-27 14:47:49.247871 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-09-27 14:47:49.249660 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-09-27 14:47:49.251401 (MainThread): Parsing macros/adapters/common.sql
+2020-09-27 14:47:49.305525 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-09-27 14:47:49.306891 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-09-27 14:47:49.308109 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-09-27 14:47:49.310256 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-09-27 14:47:49.311552 (MainThread): Parsing macros/adapters.sql
+2020-09-27 14:47:49.328408 (MainThread): Parsing macros/catalog.sql
+2020-09-27 14:47:49.334576 (MainThread): Parsing macros/etc.sql
+2020-09-27 14:47:49.335314 (MainThread): Parsing macros/materializations/incremental.sql
+2020-09-27 14:47:49.348617 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-09-27 14:47:49.350610 (MainThread): Parsing macros/materializations/seed.sql
+2020-09-27 14:47:49.353501 (MainThread): Parsing macros/materializations/table.sql
+2020-09-27 14:47:49.363598 (MainThread): Parsing macros/materializations/view.sql
+2020-09-27 14:47:49.369059 (MainThread): Partial parsing not enabled
+2020-09-27 14:47:49.414745 (MainThread): Acquiring new bigquery connection "model.hubspot.all_meeting_information".
+2020-09-27 14:47:49.414858 (MainThread): Opening a new connection, currently in state init
+2020-09-27 14:47:49.449035 (MainThread): Acquiring new bigquery connection "model.hubspot.latest_meeting_information".
+2020-09-27 14:47:49.449178 (MainThread): Opening a new connection, currently in state closed
+2020-09-27 14:47:49.462807 (MainThread): Acquiring new bigquery connection "model.hubspot.latest_owner_information".
+2020-09-27 14:47:49.462907 (MainThread): Opening a new connection, currently in state closed
+2020-09-27 14:47:49.477694 (MainThread): Acquiring new bigquery connection "model.hubspot.latest_contact_information".
+2020-09-27 14:47:49.477793 (MainThread): Opening a new connection, currently in state closed
+2020-09-27 14:47:49.583212 (Thread-72): handling poll request
+2020-09-27 14:47:49.583735 (Thread-72): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497f68deb8>]}
+2020-09-27 14:47:49.589174 (Thread-72): sending response (<Response 11708 bytes [200 OK]>) to 10.0.2.56
+2020-09-27 14:47:49.632664 (MainThread): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 14:47:49.676660 (MainThread): Found 4 models, 0 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources
+2020-09-27 14:47:49.677452 (MainThread): 
+2020-09-27 14:47:49.677773 (MainThread): Acquiring new bigquery connection "master".
+2020-09-27 14:47:49.677842 (MainThread): Opening a new connection, currently in state closed
+2020-09-27 14:47:49.683831 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_freelance-290006".
+2020-09-27 14:47:49.683931 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-09-27 14:47:49.920681 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_freelance-290006_dbt_hdumon".
+2020-09-27 14:47:49.920814 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2020-09-27 14:47:49.921432 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-09-27 14:47:50.150519 (MainThread): 14:47:50 | Concurrency: 1 threads (target='default')
+2020-09-27 14:47:50.150658 (MainThread): 14:47:50 | 
+2020-09-27 14:47:50.152597 (Thread-1): Began running node model.hubspot.latest_contact_information
+2020-09-27 14:47:50.153994 (Thread-1): 14:47:50 | 1 of 4 START table model dbt_hdumon.latest_contact_information....... [RUN]
+2020-09-27 14:47:50.154287 (Thread-1): Acquiring new bigquery connection "model.hubspot.latest_contact_information".
+2020-09-27 14:47:50.154353 (Thread-1): Opening a new connection, currently in state closed
+2020-09-27 14:47:50.154430 (Thread-1): Compiling model.hubspot.latest_contact_information
+2020-09-27 14:47:50.168996 (Thread-1): Writing injected SQL for node "model.hubspot.latest_contact_information"
+2020-09-27 14:47:50.187865 (Thread-1): finished collecting timing info
+2020-09-27 14:47:50.210310 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-09-27 14:47:50.483591 (Thread-1): Writing runtime SQL for node "model.hubspot.latest_contact_information"
+2020-09-27 14:47:50.501061 (Thread-1): On model.hubspot.latest_contact_information: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "user", "target_name": "default", "node_id": "model.hubspot.latest_contact_information"} */
+
+
+  create or replace table `freelance-290006`.`dbt_hdumon`.`latest_contact_information`
+  
+  
+  OPTIONS()
+  as (
+    
+
+select all_contact_data.vid contact_id
+      ,ARRAY_AGG(properties.company.value ORDER BY _sdc_extracted_at DESC)[OFFSET(0)] AS contact_company
+      ,ARRAY_AGG(concat(properties.firstname.value, " ",properties.lastname.value) ORDER BY _sdc_extracted_at DESC)[OFFSET(0)] AS contact_full_name
+      ,ARRAY_AGG(properties.country.value ORDER BY _sdc_extracted_at DESC)[OFFSET(0)] AS contact_country
+      ,ARRAY_AGG(properties.state.value ORDER BY _sdc_extracted_at DESC)[OFFSET(0)] AS contact_state
+FROM `freelance-290006.hubspot.contacts` all_contact_data
+group by all_contact_data.vid
+  );
+    
+2020-09-27 14:47:51.186976 (Thread-73): handling poll request
+2020-09-27 14:47:51.188718 (Thread-73): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497f6b4390>]}
+2020-09-27 14:47:51.191800 (Thread-73): sending response (<Response 8187 bytes [200 OK]>) to 10.0.47.163
+2020-09-27 14:47:52.685244 (Thread-74): handling poll request
+2020-09-27 14:47:52.685730 (Thread-74): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497ed4a6d8>]}
+2020-09-27 14:47:52.686709 (Thread-74): sending response (<Response 287 bytes [200 OK]>) to 10.0.47.163
+2020-09-27 14:47:52.931621 (Thread-1): finished collecting timing info
+2020-09-27 14:47:52.932431 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'acaaa686-4f45-481d-bd45-248085e8f7c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d06ed9a58>]}
+2020-09-27 14:47:52.933571 (Thread-1): 14:47:52 | 1 of 4 OK created table model dbt_hdumon.latest_contact_information.. [CREATE TABLE (3) in 2.78s]
+2020-09-27 14:47:52.933673 (Thread-1): Finished running node model.hubspot.latest_contact_information
+2020-09-27 14:47:52.933797 (Thread-1): Began running node model.hubspot.latest_meeting_information
+2020-09-27 14:47:52.934718 (Thread-1): 14:47:52 | 2 of 4 START table model dbt_hdumon.latest_meeting_information....... [RUN]
+2020-09-27 14:47:52.934949 (Thread-1): Acquiring new bigquery connection "model.hubspot.latest_meeting_information".
+2020-09-27 14:47:52.935010 (Thread-1): Opening a new connection, currently in state closed
+2020-09-27 14:47:52.935077 (Thread-1): Compiling model.hubspot.latest_meeting_information
+2020-09-27 14:47:52.941986 (Thread-1): Writing injected SQL for node "model.hubspot.latest_meeting_information"
+2020-09-27 14:47:52.951793 (Thread-1): finished collecting timing info
+2020-09-27 14:47:52.955975 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-09-27 14:47:53.162570 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-09-27 14:47:53.313054 (Thread-1): Writing runtime SQL for node "model.hubspot.latest_meeting_information"
+2020-09-27 14:47:53.322660 (Thread-1): On model.hubspot.latest_meeting_information: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "user", "target_name": "default", "node_id": "model.hubspot.latest_meeting_information"} */
+
+
+  create or replace table `freelance-290006`.`dbt_hdumon`.`latest_meeting_information`
+  
+  
+  OPTIONS()
+  as (
+    
+
+with latest_meeting_data as
+(
+select e.engagement_id, max(_sdc_extracted_at) _sdc_extracted_at
+from `freelance-290006.hubspot.engagements` e
+group by e.engagement_id
+)
+
+select e.engagement_id meeting_id
+      ,value contact_id
+      ,DATE(TIMESTAMP_MILLIS(e.metadata.starttime)) meeting_date
+      ,(e.metadata.endtime - e.metadata.starttime)/1000 meeting_duration_minutes
+      ,e.engagement.ownerid owner_id
+FROM `freelance-290006.hubspot.engagements` e, unnest(e.associations.contactids)
+inner join latest_meeting_data 
+on latest_meeting_data.engagement_id = e.engagement_id
+and latest_meeting_data._sdc_extracted_at = e._sdc_extracted_at
+WHERE e.engagement.type = 'MEETING'
+  );
+    
+2020-09-27 14:47:54.140084 (Thread-75): handling poll request
+2020-09-27 14:47:54.140581 (Thread-75): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497ed4a5f8>]}
+2020-09-27 14:47:54.144555 (Thread-75): sending response (<Response 6726 bytes [200 OK]>) to 10.0.34.126
+2020-09-27 14:47:55.561833 (Thread-76): handling poll request
+2020-09-27 14:47:55.562363 (Thread-76): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f498419b3c8>]}
+2020-09-27 14:47:55.563346 (Thread-76): sending response (<Response 287 bytes [200 OK]>) to 10.0.12.156
+2020-09-27 14:47:55.597203 (Thread-1): finished collecting timing info
+2020-09-27 14:47:55.597961 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'acaaa686-4f45-481d-bd45-248085e8f7c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d06f83390>]}
+2020-09-27 14:47:55.599436 (Thread-1): 14:47:55 | 2 of 4 OK created table model dbt_hdumon.latest_meeting_information.. [CREATE TABLE (7) in 2.66s]
+2020-09-27 14:47:55.599537 (Thread-1): Finished running node model.hubspot.latest_meeting_information
+2020-09-27 14:47:55.599659 (Thread-1): Began running node model.hubspot.latest_owner_information
+2020-09-27 14:47:55.600574 (Thread-1): 14:47:55 | 3 of 4 START table model dbt_hdumon.latest_owner_information......... [RUN]
+2020-09-27 14:47:55.600805 (Thread-1): Acquiring new bigquery connection "model.hubspot.latest_owner_information".
+2020-09-27 14:47:55.600868 (Thread-1): Opening a new connection, currently in state closed
+2020-09-27 14:47:55.600933 (Thread-1): Compiling model.hubspot.latest_owner_information
+2020-09-27 14:47:55.607557 (Thread-1): Writing injected SQL for node "model.hubspot.latest_owner_information"
+2020-09-27 14:47:55.620499 (Thread-1): finished collecting timing info
+2020-09-27 14:47:55.624573 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-09-27 14:47:55.627259 (Thread-1): unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('10.0.14.251', 53036), raddr=('142.250.73.234', 443)>
+2020-09-27 14:47:55.627466 (Thread-1): unclosed <socket.socket fd=9, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.0.14.251', 42472), raddr=('172.217.7.170', 443)>
+2020-09-27 14:47:55.627627 (Thread-1): unclosed <socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('10.0.14.251', 53042), raddr=('142.250.73.234', 443)>
+2020-09-27 14:47:55.627763 (Thread-1): unclosed <socket.socket fd=11, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.0.14.251', 42480), raddr=('172.217.7.170', 443)>
+2020-09-27 14:47:55.627926 (Thread-1): unclosed <socket.socket fd=14, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('10.0.14.251', 53074), raddr=('142.250.73.234', 443)>
+2020-09-27 14:47:55.628055 (Thread-1): unclosed <socket.socket fd=13, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.0.14.251', 51432), raddr=('172.217.164.170', 443)>
+2020-09-27 14:47:55.855115 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-09-27 14:47:56.007159 (Thread-1): Writing runtime SQL for node "model.hubspot.latest_owner_information"
+2020-09-27 14:47:56.018384 (Thread-1): On model.hubspot.latest_owner_information: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "user", "target_name": "default", "node_id": "model.hubspot.latest_owner_information"} */
+
+
+  create or replace table `freelance-290006`.`dbt_hdumon`.`latest_owner_information`
+  
+  
+  OPTIONS()
+  as (
+    
+
+select ownerid owner_id
+      ,ARRAY_AGG(concat(firstname, " ",lastname) ORDER BY _sdc_extracted_at DESC)[OFFSET(0)] AS owner_full_name
+FROM `freelance-290006.hubspot.owners`
+group by ownerid
+  );
+    
+2020-09-27 14:47:57.026195 (Thread-77): handling poll request
+2020-09-27 14:47:57.026679 (Thread-77): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497ed526a0>]}
+2020-09-27 14:47:57.028933 (Thread-77): sending response (<Response 6189 bytes [200 OK]>) to 10.0.44.9
+2020-09-27 14:47:58.220529 (Thread-1): finished collecting timing info
+2020-09-27 14:47:58.221315 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'acaaa686-4f45-481d-bd45-248085e8f7c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d047ba2e8>]}
+2020-09-27 14:47:58.222418 (Thread-1): 14:47:58 | 3 of 4 OK created table model dbt_hdumon.latest_owner_information.... [CREATE TABLE (1) in 2.62s]
+2020-09-27 14:47:58.222519 (Thread-1): Finished running node model.hubspot.latest_owner_information
+2020-09-27 14:47:58.223202 (Thread-1): Began running node model.hubspot.all_meeting_information
+2020-09-27 14:47:58.224386 (Thread-1): 14:47:58 | 4 of 4 START view model dbt_hdumon.all_meeting_information........... [RUN]
+2020-09-27 14:47:58.224649 (Thread-1): Acquiring new bigquery connection "model.hubspot.all_meeting_information".
+2020-09-27 14:47:58.224716 (Thread-1): Opening a new connection, currently in state closed
+2020-09-27 14:47:58.224782 (Thread-1): Compiling model.hubspot.all_meeting_information
+2020-09-27 14:47:58.234515 (Thread-1): Writing injected SQL for node "model.hubspot.all_meeting_information"
+2020-09-27 14:47:58.252999 (Thread-1): finished collecting timing info
+2020-09-27 14:47:58.270901 (Thread-1): Writing runtime SQL for node "model.hubspot.all_meeting_information"
+2020-09-27 14:47:58.289350 (Thread-1): On model.hubspot.all_meeting_information: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "user", "target_name": "default", "node_id": "model.hubspot.all_meeting_information"} */
+
+
+  create or replace view `freelance-290006`.`dbt_hdumon`.`all_meeting_information`
+  OPTIONS()
+  as 
+
+
+with contacts as (
+
+    select * from `freelance-290006`.`dbt_hdumon`.`latest_contact_information`
+),
+
+meetings as (
+
+    select * from `freelance-290006`.`dbt_hdumon`.`latest_meeting_information`
+),
+
+owners as (
+
+    select * from `freelance-290006`.`dbt_hdumon`.`latest_owner_information`
+)
+
+select contacts.contact_company
+       ,contacts.contact_full_name
+       ,contacts.contact_country
+       ,contacts.contact_state
+       ,owners.owner_full_name
+       ,meetings.meeting_id
+       ,meetings.meeting_duration_minutes
+       ,meetings.meeting_date
+from meetings
+left join owners using (owner_id)
+left join contacts using (contact_id);
+
+
+2020-09-27 14:47:58.458011 (Thread-78): handling poll request
+2020-09-27 14:47:58.458496 (Thread-78): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49853331d0>]}
+2020-09-27 14:47:58.460782 (Thread-78): sending response (<Response 6738 bytes [200 OK]>) to 10.0.5.150
+2020-09-27 14:47:59.111244 (Thread-1): finished collecting timing info
+2020-09-27 14:47:59.111993 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'acaaa686-4f45-481d-bd45-248085e8f7c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d047ba4a8>]}
+2020-09-27 14:47:59.113101 (Thread-1): 14:47:59 | 4 of 4 OK created view model dbt_hdumon.all_meeting_information...... [CREATE VIEW in 0.89s]
+2020-09-27 14:47:59.113217 (Thread-1): Finished running node model.hubspot.all_meeting_information
+2020-09-27 14:47:59.170999 (MainThread): Acquiring new bigquery connection "master".
+2020-09-27 14:47:59.171098 (MainThread): Opening a new connection, currently in state closed
+2020-09-27 14:47:59.171354 (MainThread): 14:47:59 | 
+2020-09-27 14:47:59.171429 (MainThread): 14:47:59 | Finished running 3 table models, 1 view model in 9.49s.
+2020-09-27 14:47:59.171493 (MainThread): Connection 'master' was properly closed.
+2020-09-27 14:47:59.171540 (MainThread): Connection 'model.hubspot.all_meeting_information' was properly closed.
+2020-09-27 14:47:59.220704 (MainThread): 
+2020-09-27 14:47:59.220847 (MainThread): Completed successfully
+2020-09-27 14:47:59.220918 (MainThread): 
+Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+2020-09-27 14:48:00.494523 (Thread-79): handling poll request
+2020-09-27 14:48:00.495019 (Thread-79): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497ed4aa20>]}
+2020-09-27 14:48:00.509666 (Thread-79): sending response (<Response 17854 bytes [200 OK]>) to 10.0.3.121
+2020-09-27 14:48:01.497743 (Thread-80): handling status request
+2020-09-27 14:48:01.498246 (Thread-80): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49844506d8>]}
+2020-09-27 14:48:01.500155 (Thread-80): Checking header 'user-agent' tracing in whitelist set(), 24 additional messages skipped
+2020-09-27 14:48:01.527508 (Thread-80): writing 1 spans (enabled:True), 71 additional messages skipped
+2020-09-27 14:48:01.527728 (Thread-80): 
+      name requests.request
+        id 1942159080786453828
+  trace_id 3873988762923796898
+ parent_id None
+   service requests
+  resource requests.request
+      type http
+     start 1601218081.49969
+       end 1601218081.527389
+  duration 0.027699s
+     error 0
+      tags 
+           http.method:POST
+           http.status_code:200
+           http.url:https://fishtownanalytics.sinter-collect.com/com.snowplowanalytics.snowplow/tp2
+           runtime-id:5451ac43f10f44ba97a1e3ddf7808fcf, 71 additional messages skipped
+2020-09-27 14:48:01.529957 (Thread-80): sending response (<Response 874 bytes [200 OK]>) to 10.0.12.102
+2020-09-27 14:48:01.713733 (AgentWriter): reported 1 traces in 0.00452s, 1 additional messages skipped
+2020-09-27 14:48:01.713987 (AgentWriter): initialized RateSampler, sample 100% of traces, 63 additional messages skipped
+2020-09-27 14:52:19.491066 (Thread-81): handling status request
+2020-09-27 14:52:19.492791 (Thread-81): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4984051470>]}
+2020-09-27 14:52:19.494238 (Thread-81): sending response (<Response 874 bytes [200 OK]>) to 10.0.36.169
