@@ -1191,3 +1191,75 @@ There are 1 unused configuration paths:
 2020-09-27 15:25:14.910049 (Thread-4): handling status request
 2020-09-27 15:25:14.912101 (Thread-4): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f27c1392-49ef-4e22-9138-64d45bf13d04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6882d68898>]}
 2020-09-27 15:25:14.916891 (Thread-4): sending response (<Response 11391 bytes [200 OK]>) to 10.0.12.102
+2020-09-27 15:25:20.330083 (MainThread): writing 1 spans (enabled:True), 89 additional messages skipped
+2020-09-27 15:25:20.331993 (MainThread): 
+      name jinja2.compile
+        id 5456621555508904622
+  trace_id 14730850976232471992
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1601220320.3293362
+       end 1601220320.3298862
+  duration 0.000550s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:1ada62caa99c4456b1ce5d88fe704beb, 121 additional messages skipped
+2020-09-27 15:25:20.437069 (Thread-5): Acquiring new bigquery connection "model.hubspot.all_meeting_information".
+2020-09-27 15:25:20.437242 (Thread-5): Opening a new connection, currently in state closed
+2020-09-27 15:25:20.455494 (Thread-5): Acquiring new bigquery connection "model.hubspot.latest_meeting_information".
+2020-09-27 15:25:20.455653 (Thread-5): Opening a new connection, currently in state closed
+2020-09-27 15:25:20.472226 (Thread-5): Acquiring new bigquery connection "model.hubspot.latest_owner_information".
+2020-09-27 15:25:20.472381 (Thread-5): Opening a new connection, currently in state closed
+2020-09-27 15:25:20.488855 (Thread-5): Acquiring new bigquery connection "model.hubspot.latest_contact_information".
+2020-09-27 15:25:20.489048 (Thread-5): Opening a new connection, currently in state closed
+2020-09-27 15:25:20.497689 (AgentWriter): reported 41 traces in 0.01669s, 2 additional messages skipped
+2020-09-27 15:25:20.498004 (AgentWriter): initialized RateSampler, sample 100% of traces, 95 additional messages skipped
+2020-09-27 15:25:20.647598 (Thread-5): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 15:25:20.763465 (Thread-6): handling status request
+2020-09-27 15:25:20.764134 (Thread-6): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f27c1392-49ef-4e22-9138-64d45bf13d04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6882d31828>]}
+2020-09-27 15:25:20.766763 (Thread-6): sending response (<Response 2960 bytes [200 OK]>) to 10.0.44.9
+2020-09-27 15:25:56.975987 (Thread-7): Got an acceptable cached parse result
+2020-09-27 15:25:57.043654 (Thread-7): Acquiring new bigquery connection "model.hubspot.latest_contact_information".
+2020-09-27 15:25:57.043885 (Thread-7): Opening a new connection, currently in state closed
+2020-09-27 15:25:57.246852 (Thread-7): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 15:25:57.495292 (Thread-8): handling status request
+2020-09-27 15:25:57.495851 (Thread-8): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f27c1392-49ef-4e22-9138-64d45bf13d04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6882cdaf60>]}
+2020-09-27 15:25:57.497158 (Thread-8): sending response (<Response 1462 bytes [200 OK]>) to 10.0.47.163
+2020-09-27 15:26:00.000425 (MainThread): writing 1 spans (enabled:True), 102 additional messages skipped
+2020-09-27 15:26:00.000681 (MainThread): 
+      name jinja2.compile
+        id 3224653999100073133
+  trace_id 18132864028029155848
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1601220359.9997509
+       end 1601220360.0002778
+  duration 0.000527s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:1ada62caa99c4456b1ce5d88fe704beb, 102 additional messages skipped
+2020-09-27 15:26:00.054484 (Thread-9): Got an acceptable cached parse result
+2020-09-27 15:26:00.383290 (Thread-9): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 15:26:00.426493 (Thread-10): handling status request
+2020-09-27 15:26:00.427123 (Thread-10): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f27c1392-49ef-4e22-9138-64d45bf13d04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6882c129e8>]}
+2020-09-27 15:26:00.428429 (Thread-10): sending response (<Response 872 bytes [200 OK]>) to 10.0.12.156
+2020-09-27 15:26:00.519329 (AgentWriter): reported 35 traces in 0.00825s, 2 additional messages skipped
+2020-09-27 15:26:00.519731 (AgentWriter): initialized RateSampler, sample 100% of traces, 95 additional messages skipped
+2020-09-27 15:26:12.819772 (Thread-11): handling status request
+2020-09-27 15:26:12.822044 (Thread-11): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f27c1392-49ef-4e22-9138-64d45bf13d04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6882a59748>]}
+2020-09-27 15:26:12.823092 (Thread-11): sending response (<Response 872 bytes [200 OK]>) to 10.0.38.51
