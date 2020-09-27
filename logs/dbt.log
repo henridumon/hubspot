@@ -483,3 +483,60 @@ There are 1 unused configuration paths:
 2020-09-27 14:07:26.854993 (Thread-39): handling status request
 2020-09-27 14:07:26.856822 (Thread-39): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f497edf6ac8>]}
 2020-09-27 14:07:26.857885 (Thread-39): sending response (<Response 606 bytes [200 OK]>) to 10.0.36.169
+2020-09-27 14:07:32.501823 (MainThread): writing 1 spans (enabled:True), 69 additional messages skipped
+2020-09-27 14:07:32.503450 (MainThread): 
+      name jinja2.compile
+        id 3524492696898006736
+  trace_id 5129812300300528868
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1601215652.501086
+       end 1601215652.501663
+  duration 0.000577s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:5451ac43f10f44ba97a1e3ddf7808fcf, 69 additional messages skipped
+2020-09-27 14:07:32.776105 (Thread-40): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 14:07:33.382578 (AgentWriter): reported 35 traces in 0.00409s, 1 additional messages skipped
+2020-09-27 14:07:33.382801 (AgentWriter): initialized RateSampler, sample 100% of traces, 63 additional messages skipped
+2020-09-27 14:07:33.540703 (Thread-41): handling status request
+2020-09-27 14:07:33.541291 (Thread-41): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f498429b9b0>]}
+2020-09-27 14:07:33.542248 (Thread-41): sending response (<Response 606 bytes [200 OK]>) to 10.0.17.64
+2020-09-27 14:08:54.284987 (MainThread): writing 1 spans (enabled:True), 34 additional messages skipped
+2020-09-27 14:08:54.286713 (MainThread): 
+      name jinja2.compile
+        id 799700261599124231
+  trace_id 10923865437595055866
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1601215734.2843258
+       end 1601215734.284829
+  duration 0.000503s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:5451ac43f10f44ba97a1e3ddf7808fcf, 34 additional messages skipped
+2020-09-27 14:08:54.351120 (Thread-42): Got an acceptable cached parse result
+2020-09-27 14:08:54.412317 (AgentWriter): reported 35 traces in 0.01085s
+2020-09-27 14:08:54.412689 (AgentWriter): initialized RateSampler, sample 100% of traces, 31 additional messages skipped
+2020-09-27 14:08:54.539463 (Thread-42): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-09-27 14:08:54.885228 (Thread-43): handling status request
+2020-09-27 14:08:54.885878 (Thread-43): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4984252ef0>]}
+2020-09-27 14:08:54.887384 (Thread-43): sending response (<Response 874 bytes [200 OK]>) to 10.0.36.169
+2020-09-27 14:12:02.528562 (Thread-44): handling status request
+2020-09-27 14:12:02.529045 (Thread-44): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49842b3160>]}
+2020-09-27 14:12:02.530071 (Thread-44): sending response (<Response 874 bytes [200 OK]>) to 10.0.12.102
+2020-09-27 14:12:22.732326 (Thread-45): handling status request
+2020-09-27 14:12:22.734514 (Thread-45): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b183c013-079a-4507-acb5-97f415ded203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49842b3160>]}
+2020-09-27 14:12:22.735531 (Thread-45): sending response (<Response 874 bytes [200 OK]>) to 10.0.18.102
